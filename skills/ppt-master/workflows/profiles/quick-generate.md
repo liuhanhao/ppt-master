@@ -52,6 +52,7 @@ Artifact roles follow [`artifact-ownership.md`](../../references/artifact-owners
 |---|---|
 | Topic or requirements without supporting facts | Run [`topic-research`](../stages/topic-research.md) and retain its Markdown supplement plus facts JSON; adopted URLs stay inside the pair and are never import inputs |
 | PNG / JPEG / WebP page frames under Image to PPTX | Do not call `source_to_md.py`; normalize single pages and contact sheets into the ordered frame roster through that profile, then import the originals |
+| `basic.smartedu.cn` link (syncClassroom / prepare / quality course) | Run [`smartedu-source`](../stages/smartedu-source.md) first; import its `source.md` / `source.pdf` / `images/` / companion PDFs directly |
 | PDF / DOCX / Office / XLSX / XLSM / PPTX / EPUB / HTML / LaTeX / RST / web URL | `python3 ${SKILL_DIR}/scripts/source_to_md.py <file_or_URL_or_dir> [...]` (`-t <type>` only when detection is ambiguous; `-o` only for a required output path) |
 | CSV / TSV | Read directly as a plain-text table |
 | Markdown or conversation text | Read directly |
